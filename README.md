@@ -50,9 +50,9 @@ Built as part of the NASA Stardance Challenge to create a functional web operati
 
 ## How AI Helped
 
--Helped with debugging code
--Helped with designing ideas
--Helped with writing this Readme file
+- Helped with debugging code
+- Helped with designing ideas
+- Helped with writing this Readme file
 
 ## Author
 
