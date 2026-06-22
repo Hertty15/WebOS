@@ -1,8 +1,9 @@
 # 🌟 My WebOS
 
-A beautiful, functional web-based operating system built for the **NASA Stardance Challenge**!
+A beautiful, functional web-based operating system (Can't actually be used since this was not made to be used. Only for a personal project.)
 
-![WebOS Screenshot](./screenshot.png)
+<img width="1917" height="923" alt="Screenshot 2026-06-22 234729" src="https://github.com/user-attachments/assets/42ab62de-5c6c-426c-bb89-6b418a3a1536" />
+
 
 ## ✨ Features
 
