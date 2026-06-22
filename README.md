@@ -18,17 +18,17 @@ A beautiful, functional web-based operating system built for the **NASA Stardanc
   - ⚙️ Settings
   - ℹ️ About
 
-## 🚀 Try It Out
+## Try It Out
 
 Visit the live demo: **[hertty15.github.io/WebOS](https://hertty15.github.io/WebOS/)**
 
-## 🛠️ Built With
+## Built With
 
 - HTML5
 - CSS3 (with glassmorphism effects)
 - JavaScript (for draggable windows and interactivity)
 
-## 📖 How It Works
+## How It Works
 
 This project demonstrates:
 - **DOM Manipulation** - Creating and managing window elements
@@ -47,24 +47,12 @@ Built as part of the NASA Stardance Challenge to create a functional web operati
 - Understood flexible box layouts and absolute positioning
 - Practiced modular code organization
 
-## 🔧 Future Improvements
+## How AI Helped
 
-- [ ] Add more functional apps (Calendar, Weather, Music Player)
-- [ ] Implement a file system
-- [ ] Add window minimize/maximize functionality
-- [ ] Create a working terminal with commands
-- [ ] Add customizable themes
+-Helped with debugging code
+-Helped with designing ideas
+-Helped with writing this Readme file
 
-## 👨‍💻 Author
+## Author
 
-**@Hertty10** - Student & Developer
-
-Built for the **NASA Stardance Challenge 2026**
-
-## 📄 License
-
-This project is open source and available for educational purposes.
-
----
-
-⭐ **Star this repo if you like it!**
+**@Hertty10** - Student
