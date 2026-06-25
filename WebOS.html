@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>My WebOS</title>
+</head>
+<body>
+
+    
+    <div id="topbar">
+        <p id="welcomeopen">YourOS</p>
+        <p id="timeElement">Time</p>
+    </div>
+
+    
+    <div class="window" id="welcome">
+        <div class="windowheader" id="welcomeheader">
+            <p class="headertext">Welcome</p>
+            <div class="closebutton" id="welcomeclose"></div>
+        </div>
+        <div class="windowcontent">
+            <h2>HELLO</h2>
+            <p>Welcome to my personal operating system.</p>
+            <p>This is where you can learn about me!</p>
+            
+            <h3>About Me</h3>
+            <p>I'm a student participating in the Stardance Challenge!</p>
+            
+            <h3>My Projects</h3>
+            <a href="https://github.com/Hertty15/WebOS" target="_blank">Check out my GitHub →</a>
+        </div>
+    </div>
+
+    
+    <div class="window" id="about" style="display: none; top: 150px; left: 400px;">
+        <div class="windowheader" id="aboutheader">
+            <p class="headertext">About</p>
+            <div class="closebutton" id="aboutclose"></div>
+        </div>
+        <div class="windowcontent">
+            <p>This WebOS was built for the NASA Stardance Challenge!</p>
+            <p>Version 1.0</p>
+        </div>
+    </div>
+
+
+<div id="dock">
+    <div class="dock-icon" data-window="welcome" title="Welcome">🏠</div>
+    <div class="dock-icon" data-window="calculator" title="Calculator">🧮</div>
+    <div class="dock-icon" data-window="notes" title="Notes">📝</div>
+    <div class="dock-icon" data-window="terminal" title="Terminal">💻</div>
+    <div class="dock-separator"></div>
+    <div class="dock-icon" data-window="settings" title="Settings">⚙️</div>
+    <div class="dock-icon" data-window="about" title="About">ℹ️</div>
+</div>
+
+
+<!--new calc window cuz old wasnt working-->\
+<div class="window" id="calculator" style="display: none; top: 100px; left: 200px; width: 320px;">
+    <div class="windowheader" id="calculatorheader">
+        <p class="header">Calculator</p>
+        <div class="closebutton" id="calculatorclose"></div>
+    </div>
+    <div class="windowcontent">
+        <div id="calc-display" style="background: rgba(0, 0, 0, 0.3); padding: 20px; margin-bottom: 15px; border-radius: 8px; font-size: 32px; text-align: right;">0</div>
+        <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px;">
+            <button onclick="calc('C')" style="padding: 20px; font-size: 18px; cursor: pointer;">C</button>
+            <button onclick="calc('±')" style="padding: 20px; font-size: 18px; cursor: pointer;">±</button>
+            <button onclick="calc('%')" style="padding: 20px; font-size: 18px; cursor: pointer;">%</button>
+            <button onclick="calc('÷')" style="padding: 20px; font-size: 18px; cursor: pointer;">÷</button>
+            <button onclick="calc('7')" style="padding: 20px; font-size: 18px; cursor: pointer;">7</button>
+            <button onclick="calc('8')" style="padding: 20px; font-size: 18px; cursor: pointer;">8</button>
+            <button onclick="calc('9')" style="padding: 20px; font-size: 18px; cursor: pointer;">9</button>
+            <button onclick="calc('×')" style="padding: 20px; font-size: 18px; cursor: pointer;">×</button>
+            <button onclick="calc('4')" style="padding: 20px; font-size: 18px; cursor: pointer;">4</button>
+            <button onclick="calc('5')" style="padding: 20px; font-size: 18px; cursor: pointer;">5</button>
+            <button onclick="calc('6')" style="padding: 20px; font-size: 18px; cursor: pointer;">6</button>
+            <button onclick="calc('-')" style="padding: 20px; font-size: 18px; cursor: pointer;">-</button>
+            <button onclick="calc('1')" style="padding: 20px; font-size: 18px; cursor: pointer;">1</button>
+            <button onclick="calc('2')" style="padding: 20px; font-size: 18px; cursor: pointer;">2</button>
+            <button onclick="calc('3')" style="padding: 20px; font-size: 18px; cursor: pointer;">3</button>
+            <button onclick="calc('+')" style="padding: 20px; font-size: 18px; cursor: pointer;">+</button>
+            <button onclick="calc('0')" style="padding: 20px; font-size: 18px; cursor: pointer; grid-column: span 2;">0</button>
+            <button onclick="calc('.')" style="padding: 20px; font-size: 18px; cursor: pointer;">.</button>
+            <button onclick="calc('=')" style="padding: 20px; font-size: 18px; cursor: pointer; background: #4CAF50; color: white;">=</button>
+        </div>
+    </div>
+</div>
+
+<div class="window" id="notes" style="display: none; top: 150px; left: 350px;">
+    <div class="windowheader" id="notesheader">
+        <p class="headertext">Notes</p>
+        <div class="closebutton" id="notesclose"></div>
+    </div>
+    <div class="windowcontent">
+        <textarea style="width: 100%; height: 200px; background: rgba(255,255,255,0.9); color: #333; border: none; border-radius: 8px; padding: 12px; font-family: inherit; font-size: 14px; resize: none;" placeholder="Start typing your notes here..."></textarea>
+        <p style="margin-top: 10px; font-size: 12px; opacity: 0.7;">📝 Auto-saved</p>
+    </div>
+</div>
+
+<!--making it so that the settings works-->
+<div class="window" id="settings" style="display: none; top: 120px; left: 300px; width: 400px;">
+    <div class="windowheader" id="settingsheader">
+        <p class="headertext">Settings</p>
+        <div class="closebutton" id="settingsclose"></div>
+    </div>
+    <div class="windowcontent">
+        <h3>🎨 Desktop Background</h3>
+        <p style="font-size: 13px; opacity: 0.8px; margin-bottom: 15px;">Click a color to change desktop</p>
+        
+        <div style="display: flex; gap: 15px; flex-wrap: wrap;">
+            <div class="color-swatch" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);" onclick="changebg('linear-gradient(135deg, #667eea 0%, #764ba2 100%)')"></div>
+            <div class="color-swatch" style="background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);" onclick="changebg('linear-gradient(135deg, #ff9a9e 0%, #fecfef 99%, #fecfef 100%)')"></div>
+            <div class="color-swatch" style="background: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);" onclick="changebg('linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%)')"></div>
+            <div class="color-swatch" style="background: linear-gradient(135deg, #000000 0%, #9f9f9f 100%);" onclick="changebg('linear-gradient(135deg, #000000 0%, #9f9f9f 100%)')"></div>
+        </div>
+        <h3 style="margin-top: 25px;">👤 Account</h3>
+        <p style="font-size: 13px; opacity: 0.8;">Signed in as: <strong>Student</strong></p>
+    </div>
+</div>
+
+<!--setting up the working termianl-->
+<!-- TERMINAL WINDOW -->
+<div class="window" id="terminal" style="display: none; top: 180px; left: 250px; width: 500px; background: rgba(10, 10, 10, 0.95);">
+    <div class="windowheader" id="terminalheader" style="background: rgba(255,255,255,0.05);">
+        <p class="headertext">Terminal</p>
+        <div class="closebutton" id="terminalclose"></div>
+    </div>
+    <div class="windowcontent" id="terminal-content" style="font-family: 'Courier New', monospace; color: #00ff00; font-size: 14px; padding: 15px; max-height: 400px; overflow-y: auto;">
+        <div id="terminal-output">
+            <p style="color: #00ff00;">Welcome to WebOS Terminal v1.0</p>
+            <p style="color: #888;">Type 'help' for available commands</p>
+            <br>
+        </div>
+        <div style="display: flex; align-items: center; margin-top: 10px;">
+            <span style="color: #00ff00; margin-right: 8px; white-space: nowrap;">user@webos:~$</span>
+            <input type="text" id="terminal-input" style="background: transparent; border: none; color: #00ff00; font-family: 'Courier New', monospace; font-size: 14px; flex-grow: 1; outline: none;" autofocus>
+        </div>
+    </div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
